@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Week 1 Task</title>
+
+    <style>
+        body{
+            font-family: "Poppins ExtraBold";
+        }
+        div{
+            width: 50%;
+            margin: auto;
+            padding: 10px;
+        }
+        form{
+            padding:144px;
+            background-color: #627bf6;
+            color: #ffffff;
+            border-radius: 30px;
+            font-family: Poppins;
+            font-weight: normal;
+            font-size: 20px;
+
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        input, select{
+            width: 600px;
+            border-radius: 7px;
+            background: #d2f4ff;
+            height: 27px;
+            border: 2px;
+            font-size: 15px;
+            padding: 5px;
+
+            font-family: Poppins;
+        }
+
+        select{
+            height: 40px;
+
+        }
+
+        button{
+            width: 500px;
+            padding: 10px;
+            font-family: "Poppins ExtraBold";
+            font-size: 25px;
+            margin: 52px;
+            border-radius: 20px;
+            background-color: #f8a202;
+            color: #020e51;
+        }
+        button:hover{
+            background-color: #fad6ae;
+            transition: all ease-in-out 0.5s;
+            cursor: auto;
+        }
+
+        button:focus{
+            background-color: #623f01;
+            color: #ffffff;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="signUp">
+        <h1>WEEK 1 Task</h1>
+
+
+
+
+
+        <form id="form" action="#" method="POST" onsubmit="onclickFunction();">
+            <label for="name"> Name:</label>
+            <input type="text" id="name" name="name" value="" placeholder="John Doe" required>
+
+            <br>
+            <br>
+            <br>
+
+            <label for="mail"> E-mail:</label>
+            <input type="email" id="mail" name= 'email' value='' placeholder="johndoe@gail.com" required>
+
+            <br>
+            <br>
+            <br>
+
+            <label for="num"> Phone:</label>
+            <input type="text" id="num" name="phonenumber" placeholder="+234-000-0000-000" value="" required>
+
+            <br>
+            <br>
+            <br>
+
+            <label for="gen"> Gender:</label>
+            <select name="Gender" id="gen">
+
+                <option value="male"> Male</option>
+                <option value="female">Female</option>
+                <option value="None">Rather not say</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+
+            <label for="Pword">Password:</label>
+            <input type="password" id="Pword" required>
+
+            <br>
+            <br>
+            <br>
+
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+    </div>
+
+
+
+    <script>
+        function onclickFunction(){
+           let page = document.querySelector('body');
+           page.innerHTML = '<h1> SUBMITTED </h1>';
+        }
+    </script>
+</body>
+</html>

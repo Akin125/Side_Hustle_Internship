@@ -1,0 +1,60 @@
+body{
+    font-family: "Poppins ExtraBold";
+}
+div{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+form{
+    padding:144px;
+    background-color: #627bf6;
+    color: #ffffff;
+    border-radius: 30px;
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 20px;
+
+}
+
+h1{
+    text-align: center;
+}
+
+input, select{
+    width: 600px;
+    border-radius: 7px;
+    background: #d2f4ff;
+    height: 27px;
+    border: 2px;
+    font-size: 15px;
+    padding: 5px;
+
+    font-family: Poppins;
+}
+
+select{
+    height: 40px;
+
+}
+
+button{
+    width: 500px;
+    padding: 10px;
+    font-family: "Poppins ExtraBold";
+    font-size: 25px;
+    margin: 52px;
+    border-radius: 20px;
+    background-color: #f8a202;
+    color: #020e51;
+}
+button:hover{
+    background-color: #fad6ae;
+    transition: all ease-in-out 0.5s;
+    cursor: auto;
+}
+
+button:focus{
+    background-color: #623f01;
+    color: #ffffff;
+}
